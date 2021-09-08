@@ -23,3 +23,9 @@ plot(x, CO2_ppm_MaunaLoa)
 title("CO2 Concentrations in Mauna Hawaii")
 ylabel("CO2 Concentration (ppm)")
 xlabel('Years after 1981')
+
+#Plotting the bestfit and printing slope
+m, b = np.polyfit(x, CO2_ppm_MaunaLoa, 1)
+plt.plot(x, m*x + b)
+print(m)
+# slope = 1.54 ppm CO2 / year increase 
