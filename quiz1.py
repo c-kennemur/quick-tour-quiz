@@ -29,3 +29,5 @@ m, b = np.polyfit(x, CO2_ppm_MaunaLoa, 1)
 plt.plot(x, m*x + b)
 print(m)
 # slope = 1.54 ppm CO2 / year increase 
+
+plt.text(.5, 350, "1.54 ppm CO2 increase per year")
