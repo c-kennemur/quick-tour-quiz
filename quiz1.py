@@ -6,6 +6,7 @@ Created on Wed Sep  8 14:16:28 2021
 """
 
 import numpy as np
+from pylab import *
 
 #importing data 
 CO2_ppm_MaunaLoa = np.load("Mauna.npy")
